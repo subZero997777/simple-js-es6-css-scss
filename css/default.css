@@ -1,0 +1,115 @@
+*,*:before,*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.bg-yellow{
+	background-color: yellow;
+}
+.gb-blue{
+	background-color: blue;
+}
+.bg-green{
+	background-color: green;
+}
+.bg-pink{
+	background-color: pink;	
+}
+.bg-grey{
+	background-color: gray;
+}
+
+
+.border-red{
+	border:1px solid red;
+}
+
+.border-blue{
+	border:1px solid blue;
+}
+
+.border-green{
+	border:1px solid green;
+}
+
+.border-yellow{
+	border:1px solid pink;
+}
+
+.border-yellow{
+	border:1px solid yellow;
+}
+
+.border-black{
+	border: thin Solid black;
+}
+
+/*floats */
+.floatLeft{
+  display:block;
+  float:left;
+}
+.floatRight{
+  display:block;
+  float:right;
+}
+.clear{
+  clear:both;
+}
+
+/* borders for Debug */
+.borderGreen{
+border: thin Solid Green;
+}
+.borderBlue{
+border: thin Solid Blue;
+}
+.borderRed{
+border: thin Solid Red;
+}
+
+
+
+/*  Page Template One */
+html, body{
+			width: 100%;
+			height:100%;
+			display: block;
+			padding: 0px;
+			margin: 0px;
+		}
+		/* styling for Side Page Menu Sales */
+		#wrapper{
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: #f2f2f2;
+			float: left;
+			padding: 0px;
+			margin: 0px;
+		}
+		#contentWrapper{
+			display: block;
+			width: 80%;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			padding:12px;
+			border-right: thin solid #2f2f2f;
+			border-left: thin solid #2f2f2f;
+			background-color: #fff;
+			/* overflow-y:scroll; */
+			overflow-x:hidden;  
+		}	
+		#page{
+			display: block;
+			width: 100%;
+			float: left;
+			height: 100%;
+			padding: 4px;
+			margin: 0px;
+			background-color: #fff;
+		}
+
