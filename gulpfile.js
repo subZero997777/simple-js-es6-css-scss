@@ -9,6 +9,8 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
    sass.compiler = require('node-sass');
 
+const cssbeautify = require('gulp-cssbeautify');
+
 const uglify = require('gulp-uglify');
 const gulpif = require('gulp-if');
 const rename = require('gulp-rename');
@@ -46,6 +48,7 @@ const compileSass = function (cb) {
     .pipe(concat('custom.css'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css/'))
+    .pipe(cssbeautify())
     //stream chnages to all browser
 		.pipe(browserSync.stream())
     cb();
